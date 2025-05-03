@@ -545,6 +545,9 @@ region = Rect2(1024, 0, 128, 128)
 [sub_resource type="SpriteFrames" id="SpriteFrames_2k5xu"]
 animations = [{
 "frames": [{
+"duration": 10.0,
+"texture": null
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m751c")
 }, {
@@ -619,16 +622,16 @@ position = Vector2(534, 333)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_563et")
 autoplay = "default"
-frame_progress = 0.526439
+frame_progress = 0.682494
 speed_scale = 0.3
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="FallingStar" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(210, 66)
 scale = Vector2(0.947266, 0.818359)
 sprite_frames = SubResource("SpriteFrames_2k5xu")
 autoplay = "default"
-frame_progress = 0.470577
+frame_progress = 0.211322
 flip_h = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
