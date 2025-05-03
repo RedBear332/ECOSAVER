@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://birwrm077oh3d"
+path="res://.godot/imported/Cosmic Drift.mp3-1eb747dd026526d69761937d3c9adf15.mp3str"
+
+[deps]
+
+source_file="res://BGM/Cosmic Drift.mp3"
+dest_files=["res://.godot/imported/Cosmic Drift.mp3-1eb747dd026526d69761937d3c9adf15.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
