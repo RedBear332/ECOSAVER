@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bmymbmhcdi647"
+path="res://.godot/imported/Retro Instrument - crystal - C08.wav-37544f83433fd01c425a7fd0acf5d529.sample"
+
+[deps]
+
+source_file="res://res/Sounds/Instruments/Retro Instrument - crystal - C08.wav"
+dest_files=["res://.godot/imported/Retro Instrument - crystal - C08.wav-37544f83433fd01c425a7fd0acf5d529.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

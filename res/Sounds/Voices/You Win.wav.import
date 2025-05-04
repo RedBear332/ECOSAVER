@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://vqp1y0wgem3u"
+path="res://.godot/imported/You Win.wav-48865cceb728c92278aced1c0da7b5af.sample"
+
+[deps]
+
+source_file="res://res/Sounds/Voices/You Win.wav"
+dest_files=["res://.godot/imported/You Win.wav-48865cceb728c92278aced1c0da7b5af.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

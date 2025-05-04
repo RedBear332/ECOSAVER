@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://x1fjjn58hg5n"
+path="res://.godot/imported/Last Lap.wav-047112d622f1c1b46d229f35163b0682.sample"
+
+[deps]
+
+source_file="res://res/Sounds/Voices/Last Lap.wav"
+dest_files=["res://.godot/imported/Last Lap.wav-047112d622f1c1b46d229f35163b0682.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

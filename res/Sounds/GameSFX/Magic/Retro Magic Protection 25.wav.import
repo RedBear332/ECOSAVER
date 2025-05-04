@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dlp85sai4t1pa"
+path="res://.godot/imported/Retro Magic Protection 25.wav-1b7f86af673e8bde799e2aa692b7f635.sample"
+
+[deps]
+
+source_file="res://res/Sounds/GameSFX/Magic/Retro Magic Protection 25.wav"
+dest_files=["res://.godot/imported/Retro Magic Protection 25.wav-1b7f86af673e8bde799e2aa692b7f635.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

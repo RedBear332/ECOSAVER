@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ciymfyk5ueqm5"
+path="res://.godot/imported/Retro Roar LoFi 01.wav-13ff415da07e638bea5a83da848b4e97.sample"
+
+[deps]
+
+source_file="res://res/Sounds/GameSFX/Roar/Retro Roar LoFi 01.wav"
+dest_files=["res://.godot/imported/Retro Roar LoFi 01.wav-13ff415da07e638bea5a83da848b4e97.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

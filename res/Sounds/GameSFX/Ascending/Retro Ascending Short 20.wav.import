@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cux88xhpglj8g"
+path="res://.godot/imported/Retro Ascending Short 20.wav-2e25647915ab112573e358355b3444ec.sample"
+
+[deps]
+
+source_file="res://res/Sounds/GameSFX/Ascending/Retro Ascending Short 20.wav"
+dest_files=["res://.godot/imported/Retro Ascending Short 20.wav-2e25647915ab112573e358355b3444ec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

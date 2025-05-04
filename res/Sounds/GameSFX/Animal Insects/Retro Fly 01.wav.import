@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://be4cexttarnu4"
+path="res://.godot/imported/Retro Fly 01.wav-a09df5ea99208bf954f36c74dc37378b.sample"
+
+[deps]
+
+source_file="res://res/Sounds/GameSFX/Animal Insects/Retro Fly 01.wav"
+dest_files=["res://.godot/imported/Retro Fly 01.wav-a09df5ea99208bf954f36c74dc37378b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

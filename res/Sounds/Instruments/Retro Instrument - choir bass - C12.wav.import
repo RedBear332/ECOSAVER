@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://junow86finiu"
+path="res://.godot/imported/Retro Instrument - choir bass - C12.wav-1e9c245ffbadee5e8c2a9f8b679af65c.sample"
+
+[deps]
+
+source_file="res://res/Sounds/Instruments/Retro Instrument - choir bass - C12.wav"
+dest_files=["res://.godot/imported/Retro Instrument - choir bass - C12.wav-1e9c245ffbadee5e8c2a9f8b679af65c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

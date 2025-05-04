@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2tocub8laipq"
+path="res://.godot/imported/Retro Negative Short 21.wav-e96f6cf0c213f2bcfa0748026cce944e.sample"
+
+[deps]
+
+source_file="res://res/Sounds/GameSFX/Events/Negative/Retro Negative Short 21.wav"
+dest_files=["res://.godot/imported/Retro Negative Short 21.wav-e96f6cf0c213f2bcfa0748026cce944e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
