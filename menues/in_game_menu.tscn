@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgysej2dvs01n"]
+
+[ext_resource type="Script" uid="uid://c75bsm6fi5bgf" path="res://menues/in_game_menu.gd" id="1_j8tqk"]
+[ext_resource type="Texture2D" uid="uid://058hh5y8fqwx" path="res://res/Menu/Buttons/Previous.png" id="2_gd73e"]
+[ext_resource type="Texture2D" uid="uid://wqov38pff532" path="res://res/Menu/Buttons/Volume.png" id="3_lkgm1"]
+[ext_resource type="AudioStream" uid="uid://bn2qhce718gqt" path="res://BGM/swamp.mp3" id="4_gd73e"]
+
+[node name="In_Game_Menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_j8tqk")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 30.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="Pause" type="Button" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_gd73e")
+flat = true
+
+[node name="Music" type="Button" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_lkgm1")
+flat = true
+
+[node name="BGMMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_gd73e")
+volume_db = -20.0
+autoplay = true
+
+[node name="ConfirmMenu" type="VBoxContainer" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -18.5
+offset_right = 4.0
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ConfirmMenu"]
+layout_mode = 2
+text = "ВЫ УВЕРЕНЫ"
+
+[node name="ButtonYes" type="Button" parent="ConfirmMenu"]
+layout_mode = 2
+text = "ДА"
+
+[node name="ButtonNo" type="Button" parent="ConfirmMenu"]
+layout_mode = 2
+text = "НЕТ"
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Music" to="." method="_on_music_pressed"]
+[connection signal="pressed" from="ConfirmMenu/ButtonYes" to="." method="_on_button_yes_pressed"]
+[connection signal="pressed" from="ConfirmMenu/ButtonNo" to="." method="_on_button_no_pressed"]

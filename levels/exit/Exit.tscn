@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://c0wxqxktbl06l"]
+
+[ext_resource type="Script" uid="uid://vjfe2k0qkybi" path="res://levels/exit/exit.gd" id="1_k8kx1"]
+[ext_resource type="Texture2D" uid="uid://ck6jorffr30c7" path="res://levels/exit/spritesheet.png" id="1_rsusu"]
+[ext_resource type="AudioStream" uid="uid://cw2jvm3vt2r0m" path="res://res/Sounds/GameSFX/Magic/Retro Magic 34.wav" id="3_6uiju"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o50ny"]
+atlas = ExtResource("1_rsusu")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8kx1"]
+atlas = ExtResource("1_rsusu")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6uiju"]
+atlas = ExtResource("1_rsusu")
+region = Rect2(0, 96, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_afsw1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o50ny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8kx1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6uiju")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j3u28"]
+
+[node name="Exit" type="Node2D"]
+script = ExtResource("1_k8kx1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_afsw1")
+autoplay = "default"
+frame_progress = 0.198731
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_j3u28")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6uiju")
+volume_db = -20.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

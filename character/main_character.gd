@@ -1,12 +1,14 @@
 extends CharacterBody2D
 
 @onready var hero: AnimatedSprite2D = $AnimatedSprite2D
+@onready var  sound: AudioStreamPlayer = $AudioStreamPlayer
+const Jump = preload("res://res/Sounds/GameSFX/Bounce Jump/Retro Jump StereoUP Simple 01.wav")
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var can_move: bool = false
 
 func _ready() -> void:
-	$AudioStreamPlayer.play()
+	sound.play()
 	hero.play("Appearing")
 	await hero.animation_finished
 	can_move = true
