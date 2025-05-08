@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c75bsm6fi5bgf" path="res://menues/in_game_menu.gd" id="1_j8tqk"]
 [ext_resource type="Texture2D" uid="uid://058hh5y8fqwx" path="res://res/Menu/Buttons/Previous.png" id="2_gd73e"]
 [ext_resource type="Texture2D" uid="uid://wqov38pff532" path="res://res/Menu/Buttons/Volume.png" id="3_lkgm1"]
-[ext_resource type="AudioStream" uid="uid://bn2qhce718gqt" path="res://BGM/swamp.mp3" id="4_gd73e"]
+[ext_resource type="AudioStream" uid="uid://bo2coeuh1cm5t" path="res://BGM/Forest.mp3" id="4_gd73e"]
 
 [node name="In_Game_Menu" type="CanvasLayer"]
 process_mode = 3

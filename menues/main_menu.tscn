@@ -683,4 +683,5 @@ volume_db = -20.0
 autoplay = true
 parameters/looping = true
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/GStart" to="." method="_on_g_start_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/GExit" to="." method="_on_g_exit_pressed"]
