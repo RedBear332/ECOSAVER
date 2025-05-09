@@ -1,12 +1,11 @@
-[gd_scene load_steps=43 format=3 uid="uid://bcbfn0mh5ml3a"]
+[gd_scene load_steps=42 format=3 uid="uid://bcbfn0mh5ml3a"]
 
 [ext_resource type="Script" uid="uid://cswadirlsk662" path="res://character/main_character.gd" id="1_qt5ce"]
 [ext_resource type="Texture2D" uid="uid://dup4vfv12nvxo" path="res://res/Main Characters/Appearing (96x96).png" id="2_77ofe"]
 [ext_resource type="Texture2D" uid="uid://cafqfucppjp5q" path="res://res/Main Characters/Idle-Sheet1.png" id="3_k5mev"]
 [ext_resource type="Texture2D" uid="uid://wpxdhc62uowx" path="res://res/Main Characters/Desappearing (96x96).png" id="3_v50k7"]
-[ext_resource type="Texture2D" uid="uid://gnmc0htk604v" path="res://res/Main Characters/Virtual Guy/Fall (32x32).png" id="3_vmuo8"]
-[ext_resource type="Texture2D" uid="uid://dflug0jusdd10" path="res://res/Main Characters/Virtual Guy/Jump (32x32).png" id="5_wiv1j"]
 [ext_resource type="Texture2D" uid="uid://17041lhr0h51" path="res://res/Main Characters/Virtual Guy/Run (32x32).png" id="6_7in4v"]
+[ext_resource type="Texture2D" uid="uid://dghaow7krrqi0" path="res://res/Main Characters/Jump-All.png" id="6_v50k7"]
 [ext_resource type="AudioStream" uid="uid://bnewx4y0brkdf" path="res://res/Sounds/GameSFX/Blops/Retro Blop StereoUP 04.wav" id="7_wiv1j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vmuo8"]
@@ -66,8 +65,8 @@ atlas = ExtResource("3_v50k7")
 region = Rect2(576, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cy0yj"]
-atlas = ExtResource("3_vmuo8")
-region = Rect2(0, 0, 32, 32)
+atlas = ExtResource("6_v50k7")
+region = Rect2(704, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y20ix"]
 atlas = ExtResource("3_k5mev")
@@ -86,8 +85,8 @@ atlas = ExtResource("3_k5mev")
 region = Rect2(192, 0, 64, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_34fo7"]
-atlas = ExtResource("5_wiv1j")
-region = Rect2(0, 0, 32, 32)
+atlas = ExtResource("6_v50k7")
+region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8cgku"]
 atlas = ExtResource("6_7in4v")
@@ -203,9 +202,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cy0yj")
 }],
-"loop": true,
+"loop": false,
 "name": &"Fall",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -228,9 +227,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_34fo7")
 }],
-"loop": true,
+"loop": false,
 "name": &"Jump",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
