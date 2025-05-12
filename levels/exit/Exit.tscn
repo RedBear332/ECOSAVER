@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c0wxqxktbl06l"]
 
-[ext_resource type="Script" uid="uid://vjfe2k0qkybi" path="res://levels/exit.gd" id="1_k8kx1"]
+[ext_resource type="Script" uid="uid://vjfe2k0qkybi" path="res://levels/exit/exit.gd" id="1_k8kx1"]
 [ext_resource type="Texture2D" uid="uid://ck6jorffr30c7" path="res://levels/exit/spritesheet.png" id="1_rsusu"]
 [ext_resource type="AudioStream" uid="uid://cw2jvm3vt2r0m" path="res://res/Sounds/GameSFX/Magic/Retro Magic 34.wav" id="3_6uiju"]
 
