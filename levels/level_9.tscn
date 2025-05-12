@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://disgq6telij6d"]
+
+[ext_resource type="PackedScene" uid="uid://c0wxqxktbl06l" path="res://levels/exit/Exit.tscn" id="1_8bky6"]
+[ext_resource type="PackedScene" uid="uid://cs0rrwqlacnkp" path="res://levels/TileMap.tscn" id="2_igtvg"]
+[ext_resource type="PackedScene" uid="uid://bcbfn0mh5ml3a" path="res://character/main_character.tscn" id="3_ylt4s"]
+[ext_resource type="PackedScene" uid="uid://bgysej2dvs01n" path="res://menues/in_game_menu.tscn" id="4_076sl"]
+
+[node name="Level 9" type="Node2D"]
+
+[node name="Exit" parent="." instance=ExtResource("1_8bky6")]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("2_igtvg")]
+
+[node name="MainCharacter" parent="." instance=ExtResource("3_ylt4s")]
+
+[node name="In_Game_Menu" parent="MainCharacter" instance=ExtResource("4_076sl")]
