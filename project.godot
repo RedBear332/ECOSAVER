@@ -14,6 +14,10 @@ config/name="ECOSAVER"
 run/main_scene="uid://d2jl53808hqw7"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[autoload]
+
+GlobalVars="*res://Global/global_vars.gd"
+
 [display]
 
 window/size/viewport_width=640

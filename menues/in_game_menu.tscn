@@ -21,6 +21,12 @@ layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
 
+[node name="Score" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="HiScore" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
 [node name="Pause" type="Button" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 icon = ExtResource("2_gd73e")

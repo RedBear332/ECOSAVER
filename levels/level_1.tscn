@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://bhnn768n6qse"]
+[gd_scene load_steps=6 format=4 uid="uid://bhnn768n6qse"]
 
 [ext_resource type="PackedScene" uid="uid://cs0rrwqlacnkp" path="res://levels/TileMap.tscn" id="1_jirdo"]
 [ext_resource type="PackedScene" uid="uid://bcbfn0mh5ml3a" path="res://character/main_character.tscn" id="2_bt44k"]
 [ext_resource type="PackedScene" uid="uid://c0wxqxktbl06l" path="res://levels/exit/Exit.tscn" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bgysej2dvs01n" path="res://menues/in_game_menu.tscn" id="3_kx6l7"]
+[ext_resource type="PackedScene" uid="uid://bv43gln4t7xan" path="res://items/apple.tscn" id="5_n46q3"]
 
 [node name="Level1" type="Node2D"]
 
@@ -35,3 +36,6 @@ offset_right = 1116.0
 offset_bottom = 81.0
 theme_override_font_sizes/font_size = 25
 text = "прыгать на W/вверх"
+
+[node name="Apple" parent="." instance=ExtResource("5_n46q3")]
+position = Vector2(363, 228)

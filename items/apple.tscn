@@ -1,0 +1,152 @@
+[gd_scene load_steps=23 format=3 uid="uid://bv43gln4t7xan"]
+
+[ext_resource type="Script" uid="uid://djq5cucd58hw7" path="res://items/apple.gd" id="1_bjood"]
+[ext_resource type="Texture2D" uid="uid://cikrmlf2bqdse" path="res://res/Items/Fruits/Apple.png" id="1_vx7mh"]
+[ext_resource type="AudioStream" uid="uid://dggvouxth2fsq" path="res://res/Sounds/GameSFX/PickUp/Retro PickUp 18.wav" id="2_ru65o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bjood"]
+radius = 8.06226
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru65o"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc0dt"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_goe0l"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axanl"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rp2q6"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_po004"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnjjc"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3avh"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x68kj"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4oqo"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qk0ee"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkr3w"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl2ir"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdcdo"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0v0u"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntvj8"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdduc"]
+atlas = ExtResource("1_vx7mh")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wuq1a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru65o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vc0dt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_goe0l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axanl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rp2q6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_po004")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnjjc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3avh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x68kj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4oqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qk0ee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkr3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fl2ir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdcdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0v0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntvj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdduc")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 20.0
+}]
+
+[node name="Apple" type="Area2D"]
+script = ExtResource("1_bjood")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.00720759
+shape = SubResource("CircleShape2D_bjood")
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ru65o")
+volume_db = -20.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wuq1a")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.90525

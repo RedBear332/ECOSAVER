@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 @onready var hero: AnimatedSprite2D = $AnimatedSprite2D
 @onready var  sound: AudioStreamPlayer = $AudioStreamPlayer
-const Jump = preload("res://res/Sounds/GameSFX/Bounce Jump/Retro Jump StereoUP Simple 01.wav")
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var can_move: bool = false
@@ -45,3 +44,19 @@ func update_animation():
 	if velocity.x < 0:
 		hero.flip_h = 1
 	else: hero.flip_h = 0 
+
+func on_death():
+	GlobalVars.live = GlobalVars.live - 1
+	#Тут сделать анимацию со звуком
+	can_move = false
+	hero.play("Death")
+	await hero.animation_finished
+	can_move=true
+	queue_free()
+	if GlobalVars.live == 0: get_tree().change_scene_to_file("res://menues/main_menu.tscn")
+	else : pass #Сделать повтор уровня
+
+
+func _on_pickup_area_entered(area: Area2D) -> void:
+	if area.has_method("on_pickup"):
+		area.on_pickup(self)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://bcbfn0mh5ml3a"]
+[gd_scene load_steps=43 format=3 uid="uid://bcbfn0mh5ml3a"]
 
 [ext_resource type="Script" uid="uid://cswadirlsk662" path="res://character/main_character.gd" id="1_qt5ce"]
 [ext_resource type="Texture2D" uid="uid://dup4vfv12nvxo" path="res://res/Main Characters/Appearing (96x96).png" id="2_77ofe"]
@@ -277,13 +277,16 @@ animations = [{
 radius = 8.5
 height = 46.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_wiv1j"]
+radius = 29.0
+
 [node name="MainCharacter" type="CharacterBody2D"]
 collision_mask = 18
 script = ExtResource("1_qt5ce")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cy0yj")
-animation = &"Jump"
+animation = &"Run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
@@ -299,4 +302,10 @@ limit_top = 0
 limit_bottom = 360
 editor_draw_limits = true
 
+[node name="Pickup" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickup"]
+shape = SubResource("CircleShape2D_wiv1j")
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="area_entered" from="Pickup" to="." method="_on_pickup_area_entered"]
