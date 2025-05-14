@@ -21,6 +21,9 @@ layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
 
+[node name="Live" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
 [node name="Score" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 
@@ -37,7 +40,7 @@ layout_mode = 2
 icon = ExtResource("3_lkgm1")
 flat = true
 
-[node name="BGMMusic" type="AudioStreamPlayer" parent="."]
+[node name="BGMMusic" type="AudioStreamPlayer" parent="." groups=["background_music"]]
 stream = ExtResource("4_gd73e")
 volume_db = -20.0
 autoplay = true

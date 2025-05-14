@@ -5,7 +5,7 @@ var music_on : bool = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass # Тут сделать музыку
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -15,6 +15,11 @@ func _physics_process(delta: float) -> void:
 
 func _on_pause_pressed() -> void:
 	show_menu()
+
+func _process(delta: float) -> void:
+	$MarginContainer/HBoxContainer/Live.text = "Жизни: " + str(GlobalVars.live)
+	$MarginContainer/HBoxContainer/Score.text = "Очки: " + str(GlobalVars.score)
+	$MarginContainer/HBoxContainer/HiScore.text = "Лучший рекорд: " + str(GlobalVars.hi_score)
 
 func music_switch():
 	if music_on == true:
@@ -37,11 +42,8 @@ func hide_menu():
 	$MarginContainer/HBoxContainer/Pause.disabled = false
 	music_switch()
 	get_tree().paused = false
-
 func _on_button_yes_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://menues/main_menu.tscn")
-
-
 func _on_button_no_pressed() -> void:
 	hide_menu()

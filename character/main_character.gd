@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var hero: AnimatedSprite2D = $AnimatedSprite2D
-@onready var  sound: AudioStreamPlayer = $AudioStreamPlayer
+@onready var sound: AudioStreamPlayer = $Appear
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var can_move: bool = false
@@ -31,7 +31,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	update_animation()
 	move_and_slide()
-	
+	if position.y > 360: on_death()
 
 func update_animation():
 	if velocity.x:
@@ -46,15 +46,25 @@ func update_animation():
 	else: hero.flip_h = 0 
 
 func on_death():
-	GlobalVars.live = GlobalVars.live - 1
-	#Тут сделать анимацию со звуком
-	can_move = false
-	hero.play("Death")
-	await hero.animation_finished
-	can_move=true
-	queue_free()
-	if GlobalVars.live == 0: get_tree().change_scene_to_file("res://menues/main_menu.tscn")
-	else : pass #Сделать повтор уровня
+	GlobalVars.live -= 1
+	var music_players = get_tree().get_nodes_in_group("background_music")
+	if music_players: music_players[0].stop()
+	if GlobalVars.live > 0:
+		$OnHit.play()
+		can_move = false
+		hero.play("Death")
+		await  $OnHit.finished
+		can_move = true
+		queue_free()
+		#Тут добавить повтор уровня
+	else:
+		$OnDeath.play()
+		can_move = false
+		hero.play("Death")
+		await  $OnDeath.finished
+		can_move = true
+		queue_free()
+		get_tree().change_scene_to_file("res://menues/main_menu.tscn")
 
 
 func _on_pickup_area_entered(area: Area2D) -> void:

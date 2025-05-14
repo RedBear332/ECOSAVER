@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bcbfn0mh5ml3a"]
+[gd_scene load_steps=45 format=3 uid="uid://bcbfn0mh5ml3a"]
 
 [ext_resource type="Script" uid="uid://cswadirlsk662" path="res://character/main_character.gd" id="1_qt5ce"]
 [ext_resource type="Texture2D" uid="uid://dup4vfv12nvxo" path="res://res/Main Characters/Appearing (96x96).png" id="2_77ofe"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://17041lhr0h51" path="res://res/Main Characters/Virtual Guy/Run (32x32).png" id="6_7in4v"]
 [ext_resource type="Texture2D" uid="uid://dghaow7krrqi0" path="res://res/Main Characters/Jump-All.png" id="6_v50k7"]
 [ext_resource type="AudioStream" uid="uid://bnewx4y0brkdf" path="res://res/Sounds/GameSFX/Blops/Retro Blop StereoUP 04.wav" id="7_wiv1j"]
+[ext_resource type="AudioStream" uid="uid://db88njjaqswrc" path="res://res/Sounds/GameSFX/Music/Negative/Retro Negative Melody 01 - aCustom1.wav" id="8_7in4v"]
+[ext_resource type="AudioStream" uid="uid://pb8bb1ggmcq" path="res://res/Sounds/GameSFX/Music/Negative/Retro Negative Melody 02 - space voice pad.wav" id="8_v50k7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vmuo8"]
 atlas = ExtResource("2_77ofe")
@@ -292,8 +294,16 @@ animation = &"Run"
 position = Vector2(-0.5, 1)
 shape = SubResource("CapsuleShape2D_qt5ce")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Appear" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_wiv1j")
+volume_db = -20.0
+
+[node name="OnHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_v50k7")
+volume_db = -20.0
+
+[node name="OnDeath" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_7in4v")
 volume_db = -20.0
 
 [node name="Camera2D" type="Camera2D" parent="."]

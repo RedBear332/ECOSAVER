@@ -16,4 +16,8 @@ func _on_g_exit_pressed() -> void:
 
 
 func _on_g_start_pressed() -> void:
+	GlobalVars.score = 0
+	GlobalVars.live = 3
+	if not GlobalVars.hi_score:
+		GlobalVars.hi_score = 0
 	get_tree().change_scene_to_file("res://levels/level_1.tscn")
