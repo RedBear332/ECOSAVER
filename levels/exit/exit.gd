@@ -12,6 +12,8 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	
+	print(body.name)
 	if body.name != "MainCharacter":
 		return
 	else:
