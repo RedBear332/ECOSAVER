@@ -42,7 +42,7 @@ flat = true
 
 [node name="BGMMusic" type="AudioStreamPlayer" parent="." groups=["background_music"]]
 stream = ExtResource("4_gd73e")
-volume_db = -20.0
+volume_db = -40.0
 autoplay = true
 
 [node name="ConfirmMenu" type="VBoxContainer" parent="."]
