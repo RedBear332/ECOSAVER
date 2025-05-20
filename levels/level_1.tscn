@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://bhnn768n6qse"]
+[gd_scene load_steps=7 format=4 uid="uid://bhnn768n6qse"]
 
 [ext_resource type="PackedScene" uid="uid://cs0rrwqlacnkp" path="res://levels/TileMap.tscn" id="1_jirdo"]
 [ext_resource type="PackedScene" uid="uid://bcbfn0mh5ml3a" path="res://character/main_character.tscn" id="2_bt44k"]
 [ext_resource type="PackedScene" uid="uid://c0wxqxktbl06l" path="res://levels/exit/Exit.tscn" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bgysej2dvs01n" path="res://menues/in_game_menu.tscn" id="3_kx6l7"]
 [ext_resource type="PackedScene" uid="uid://bv43gln4t7xan" path="res://items/apple.tscn" id="5_n46q3"]
+[ext_resource type="PackedScene" uid="uid://c1r7x0k1lbrsk" path="res://enemies/slime.tscn" id="6_btoec"]
 
 [node name="Level1" type="Node2D"]
 
@@ -136,3 +137,6 @@ position = Vector2(2227, 317)
 position = Vector2(2226, 349)
 scale = Vector2(1.17692, 0.534079)
 next_scene = "res://levels/secret level/secret_level.tscn"
+
+[node name="Slime" parent="." instance=ExtResource("6_btoec")]
+position = Vector2(4156, 290)
