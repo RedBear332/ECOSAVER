@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://d21wbdr4pep2l"]
 
-[ext_resource type="Script" uid="uid://c0dok6k0tb1xc" path="res://npc.gd" id="1_rdev4"]
+[ext_resource type="Script" uid="uid://c0dok6k0tb1xc" path="res://levels/secret level/npc.gd" id="1_rdev4"]
 [ext_resource type="Texture2D" uid="uid://chfbubvj2y4l8" path="res://levels/secret level/AnimationSheet_Character.png" id="2_lu5j5"]
 [ext_resource type="AudioStream" uid="uid://b6jv66gpy0isd" path="res://levels/secret level/Smeshariki_-_Nauchnaya_tema_OST_Pedagogicheskaya_pojema_78553813.mp3" id="3_lu5j5"]
 
