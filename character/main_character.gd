@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var hero: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sound: AudioStreamPlayer = $Appear
+@export var current_level: String
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var can_move: bool = false
@@ -56,7 +57,7 @@ func on_death():
 		await  $OnHit.finished
 		can_move = true
 		queue_free()
-		#Тут добавить повтор уровня
+		get_tree().change_scene_to_file(current_level)
 	else:
 		$OnDeath.play()
 		can_move = false

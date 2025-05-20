@@ -16,5 +16,6 @@ tile_map_data = PackedByteArray("AAD+/wAAAAAAAAgAAAD+/wEAAAAAAAkAAAD+/wIAAAAAAAk
 
 [node name="MainCharacter" parent="." instance=ExtResource("3_4kux0")]
 position = Vector2(60, 275)
+current_level = "res://levels/level_8.tscn"
 
 [node name="In_Game_Menu" parent="MainCharacter" instance=ExtResource("4_fxq3v")]

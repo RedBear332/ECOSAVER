@@ -16,5 +16,6 @@ next_scene = "res://levels/level_5.tscn"
 
 [node name="MainCharacter" parent="." instance=ExtResource("2_t0qhu")]
 position = Vector2(63, 250)
+current_level = "res://levels/level_4.tscn"
 
 [node name="In_Game_Menu" parent="MainCharacter" instance=ExtResource("3_t6q73")]
