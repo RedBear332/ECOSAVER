@@ -1,11 +1,10 @@
 extends CanvasLayer
 @onready var bgm_music: AudioStreamPlayer = $BGMMusic
 var music_on : bool = true
-@export var music : String
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Тут сделать музыку
+	pass
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
