@@ -1,10 +1,10 @@
-[gd_scene load_steps=45 format=3 uid="uid://bcbfn0mh5ml3a"]
+[gd_scene load_steps=41 format=3 uid="uid://bcbfn0mh5ml3a"]
 
 [ext_resource type="Script" uid="uid://cswadirlsk662" path="res://character/main_character.gd" id="1_qt5ce"]
 [ext_resource type="Texture2D" uid="uid://dup4vfv12nvxo" path="res://res/Main Characters/Appearing (96x96).png" id="2_77ofe"]
 [ext_resource type="Texture2D" uid="uid://cafqfucppjp5q" path="res://res/Main Characters/Idle-Sheet1.png" id="3_k5mev"]
 [ext_resource type="Texture2D" uid="uid://wpxdhc62uowx" path="res://res/Main Characters/Desappearing (96x96).png" id="3_v50k7"]
-[ext_resource type="Texture2D" uid="uid://17041lhr0h51" path="res://res/Main Characters/Virtual Guy/Run (32x32).png" id="6_7in4v"]
+[ext_resource type="Texture2D" uid="uid://dot15feijtv3a" path="res://res/Main Characters/Run.png" id="6_dkkku"]
 [ext_resource type="Texture2D" uid="uid://dghaow7krrqi0" path="res://res/Main Characters/Jump-All.png" id="6_v50k7"]
 [ext_resource type="AudioStream" uid="uid://bnewx4y0brkdf" path="res://res/Sounds/GameSFX/Blops/Retro Blop StereoUP 04.wav" id="7_wiv1j"]
 [ext_resource type="AudioStream" uid="uid://db88njjaqswrc" path="res://res/Sounds/GameSFX/Music/Negative/Retro Negative Melody 01 - aCustom1.wav" id="8_7in4v"]
@@ -91,52 +91,36 @@ atlas = ExtResource("6_v50k7")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8cgku"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(0, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(0, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fsdje"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(32, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(80, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rljcj"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(64, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(160, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_60bak"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(96, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(0, 80, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g5kkh"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(128, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(80, 80, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lm4py"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(160, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(160, 80, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6lww8"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(192, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(0, 160, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tsl8c"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_64bnd"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uksld"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vntie"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(320, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pit4w"]
-atlas = ExtResource("6_7in4v")
-region = Rect2(352, 0, 32, 32)
+atlas = ExtResource("6_dkkku")
+region = Rect2(80, 160, 80, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cy0yj"]
 animations = [{
@@ -257,22 +241,10 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tsl8c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_64bnd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uksld")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vntie")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pit4w")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 20.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v50k7"]
@@ -287,7 +259,8 @@ script = ExtResource("1_qt5ce")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cy0yj")
-animation = &"Idle"
+animation = &"Run"
+frame_progress = 0.311776
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 top_level = true
