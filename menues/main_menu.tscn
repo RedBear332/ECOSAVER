@@ -612,8 +612,8 @@ corner_detail = 20
 script = ExtResource("1_xuaxs")
 
 [node name="StarsBackgroundBlack" type="Sprite2D" parent="."]
-position = Vector2(320, 180)
-scale = Vector2(1.25, 1.1465)
+position = Vector2(420.5, 180)
+scale = Vector2(1.64258, 1.1465)
 texture = ExtResource("1_1e0ll")
 
 [node name="Planet" type="AnimatedSprite2D" parent="."]
