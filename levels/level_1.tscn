@@ -140,3 +140,6 @@ next_scene = "res://levels/secret level/secret_level.tscn"
 
 [node name="Slime" parent="." instance=ExtResource("6_btoec")]
 position = Vector2(4156, 290)
+
+[node name="Slime2" parent="." instance=ExtResource("6_btoec")]
+position = Vector2(4661, 286)

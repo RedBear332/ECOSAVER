@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=4 uid="uid://dkg8f2b8xowlv"]
+[gd_scene load_steps=7 format=4 uid="uid://dkg8f2b8xowlv"]
 
 [ext_resource type="PackedScene" uid="uid://cs0rrwqlacnkp" path="res://levels/TileMap.tscn" id="1_bmgug"]
 [ext_resource type="PackedScene" uid="uid://bcbfn0mh5ml3a" path="res://character/main_character.tscn" id="2_20opy"]
 [ext_resource type="PackedScene" uid="uid://bgysej2dvs01n" path="res://menues/in_game_menu.tscn" id="3_8l0e1"]
 [ext_resource type="PackedScene" uid="uid://c0wxqxktbl06l" path="res://levels/exit/Exit.tscn" id="4_lfnxh"]
+[ext_resource type="PackedScene" uid="uid://bv43gln4t7xan" path="res://items/apple.tscn" id="5_8l0e1"]
+[ext_resource type="PackedScene" uid="uid://c1r7x0k1lbrsk" path="res://enemies/slime.tscn" id="6_lfnxh"]
 
 [node name="Level3" type="Node2D"]
 
@@ -19,3 +21,93 @@ position = Vector2(60, 253)
 current_level = "res://levels/level_3.tscn"
 
 [node name="In_Game_Menu" parent="MainCharacter" instance=ExtResource("3_8l0e1")]
+
+[node name="Apple" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(239, 262)
+
+[node name="Apple2" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(408, 268)
+
+[node name="Apple3" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(556, 193)
+
+[node name="Apple4" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(987, 277)
+
+[node name="Apple5" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(1255, 275)
+
+[node name="Apple6" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(1487, 273)
+
+[node name="Apple7" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(1744, 210)
+
+[node name="Apple8" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(2115, 204)
+
+[node name="Slime" parent="." instance=ExtResource("6_lfnxh")]
+position = Vector2(2415, 277)
+
+[node name="Slime2" parent="." instance=ExtResource("6_lfnxh")]
+position = Vector2(2001, 294)
+
+[node name="Slime3" parent="." instance=ExtResource("6_lfnxh")]
+position = Vector2(2798, 264)
+
+[node name="Apple9" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(2796, 131)
+
+[node name="Apple10" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(2618, 264)
+
+[node name="Apple11" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(3176, 290)
+
+[node name="Apple12" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(3285, 281)
+
+[node name="Apple13" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(3562, 202)
+
+[node name="Apple14" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(3694, 202)
+
+[node name="Apple15" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(3624, 275)
+
+[node name="Slime4" parent="." instance=ExtResource("6_lfnxh")]
+position = Vector2(5165, 279)
+
+[node name="Apple16" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(4226, 240)
+
+[node name="Apple17" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(4621, 270)
+
+[node name="Apple18" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(4936, 219)
+
+[node name="Slime5" parent="." instance=ExtResource("6_lfnxh")]
+position = Vector2(6811, 270)
+
+[node name="Apple19" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(5819, 264)
+
+[node name="Apple20" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(6091, 281)
+
+[node name="Apple21" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(5465, 133)
+
+[node name="Apple22" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(6286, 288)
+
+[node name="Apple23" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(6537, 288)
+
+[node name="Apple24" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(7171, 200)
+
+[node name="Apple25" parent="." instance=ExtResource("5_8l0e1")]
+position = Vector2(7330, 101)

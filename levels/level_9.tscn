@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://disgq6telij6d"]
+[gd_scene load_steps=6 format=4 uid="uid://disgq6telij6d"]
 
 [ext_resource type="PackedScene" uid="uid://c0wxqxktbl06l" path="res://levels/exit/Exit.tscn" id="1_8bky6"]
 [ext_resource type="PackedScene" uid="uid://cs0rrwqlacnkp" path="res://levels/TileMap.tscn" id="2_igtvg"]
 [ext_resource type="PackedScene" uid="uid://bcbfn0mh5ml3a" path="res://character/main_character.tscn" id="3_ylt4s"]
 [ext_resource type="PackedScene" uid="uid://bgysej2dvs01n" path="res://menues/in_game_menu.tscn" id="4_076sl"]
+[ext_resource type="PackedScene" uid="uid://bv43gln4t7xan" path="res://items/apple.tscn" id="5_igtvg"]
 
 [node name="Level 9" type="Node2D"]
 
@@ -19,3 +20,54 @@ position = Vector2(60, 288)
 current_level = "res://levels/level_9.tscn"
 
 [node name="In_Game_Menu" parent="MainCharacter" instance=ExtResource("4_076sl")]
+
+[node name="Apple" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(559, 226)
+
+[node name="Apple2" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(690, 152)
+
+[node name="Apple3" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(980, 269)
+
+[node name="Apple4" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1271, 166)
+
+[node name="Apple5" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1270, 262)
+
+[node name="Apple6" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1435, 84)
+
+[node name="Apple7" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1699, 276)
+
+[node name="Apple8" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1809, 121)
+
+[node name="Apple9" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1905, 276)
+
+[node name="Apple10" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(1895, 35)
+
+[node name="Apple11" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(2122, 234)
+
+[node name="Apple12" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(2364, 191)
+
+[node name="Apple13" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(2564, 95)
+
+[node name="Apple14" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(3036, 168)
+
+[node name="Apple15" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(2655, 199)
+
+[node name="Apple16" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(3085, 183)
+
+[node name="Apple17" parent="." instance=ExtResource("5_igtvg")]
+position = Vector2(2930, 279)

@@ -22,6 +22,7 @@ func die():
 	is_dead = true
 	set_collision_layer_value(2, false)
 	SPEED = 0
+	GlobalVars.score += 5
 	$AnimatedSprite2D.play("hit")
 	
 	await get_tree().create_timer(0.5).timeout

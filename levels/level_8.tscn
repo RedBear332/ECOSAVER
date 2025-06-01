@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=4 uid="uid://cmu4obbvrbpwr"]
+[gd_scene load_steps=8 format=4 uid="uid://cmu4obbvrbpwr"]
 
 [ext_resource type="PackedScene" uid="uid://cs0rrwqlacnkp" path="res://levels/TileMap.tscn" id="1_2b88s"]
 [ext_resource type="PackedScene" uid="uid://c0wxqxktbl06l" path="res://levels/exit/Exit.tscn" id="1_rmft0"]
 [ext_resource type="PackedScene" uid="uid://bcbfn0mh5ml3a" path="res://character/main_character.tscn" id="3_4kux0"]
 [ext_resource type="PackedScene" uid="uid://bgysej2dvs01n" path="res://menues/in_game_menu.tscn" id="4_fxq3v"]
+[ext_resource type="PackedScene" uid="uid://bv43gln4t7xan" path="res://items/apple.tscn" id="5_fxq3v"]
+[ext_resource type="PackedScene" uid="uid://c1r7x0k1lbrsk" path="res://enemies/slime.tscn" id="6_4gm13"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnp4g"]
 
 [node name="Level 8" type="Node2D"]
 
@@ -19,3 +23,81 @@ position = Vector2(60, 275)
 current_level = "res://levels/level_8.tscn"
 
 [node name="In_Game_Menu" parent="MainCharacter" instance=ExtResource("4_fxq3v")]
+
+[node name="Apple" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(322, 237)
+
+[node name="Apple2" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(582, 235)
+
+[node name="Apple3" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(870, 235)
+
+[node name="Apple4" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(1160, 238)
+
+[node name="Apple5" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(1300, 230)
+
+[node name="Apple6" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(1536, 227)
+
+[node name="Apple7" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(1770, 296)
+
+[node name="Apple8" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(1958, 221)
+
+[node name="Apple9" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(2281, 241)
+
+[node name="Apple10" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(2767, 275)
+
+[node name="Apple11" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(3043, 225)
+
+[node name="Apple12" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(3306, 221)
+
+[node name="Apple13" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(3432, 216)
+
+[node name="Apple14" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(3726, 260)
+
+[node name="Apple15" parent="." instance=ExtResource("5_fxq3v")]
+position = Vector2(4028, 129)
+
+[node name="Slime" parent="." instance=ExtResource("6_4gm13")]
+position = Vector2(722, 243)
+
+[node name="Slime2" parent="." instance=ExtResource("6_4gm13")]
+position = Vector2(950, 252)
+
+[node name="Slime3" parent="." instance=ExtResource("6_4gm13")]
+position = Vector2(475, 240)
+
+[node name="Slime4" parent="." instance=ExtResource("6_4gm13")]
+position = Vector2(2460, 225)
+
+[node name="Slime5" parent="." instance=ExtResource("6_4gm13")]
+position = Vector2(2164, 224)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(2056, 227)
+scale = Vector2(0.908333, 3.717)
+collision_layer = 32
+collision_mask = 34
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_qnp4g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D"]
+position = Vector2(489.908, 2.69034)
+scale = Vector2(0.598315, 0.612393)
+collision_layer = 32
+collision_mask = 34
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D"]
+shape = SubResource("RectangleShape2D_qnp4g")
